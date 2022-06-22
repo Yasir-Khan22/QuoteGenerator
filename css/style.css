@@ -20,17 +20,17 @@ body {
   width: 600px;
   border-radius: 20px;
   padding: 30px 30px 25px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background: var(--paragraph-clr);
 }
 .wrapper header {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   text-align: center;
   font-size: 2.2rem;
   font-weight: 600;
 }
 .wrapper .content {
-  border: 2px solid #ff0;
+  /* border: 2px solid #ff0; */
   margin: 35px 0;
 }
 .quote-area i {
@@ -54,11 +54,53 @@ body {
   word-break: break-all;
 }
 .content .author {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   display: flex;
   justify-content: flex-end;
   margin-top: 12px;
 }
 .author span:first-child {
   margin: -10px 7px 0 0;
+}
+
+.wrapper .buttons {
+  border-top: 1px solid rgb(0, 0, 0);
+}
+.buttons .features {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.features ul {
+  display: flex;
+}
+.features ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004643;
+  list-style: none;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border: 1px solid #004643;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.features ul li:hover {
+  color: #fff;
+  background: #004643;
+}
+.features button {
+  border: none;
+  outline: none;
+  background: #004643;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.99em;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 30px;
 }
