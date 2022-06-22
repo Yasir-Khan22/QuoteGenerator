@@ -30,7 +30,7 @@ body {
   font-weight: 600;
 }
 .wrapper .content {
-  border: 2px solid yellow;
+  border: 2px solid #ff0;
   margin: 35px 0;
 }
 .quote-area i {
@@ -42,7 +42,7 @@ body {
 .quote-area i:last-child {
   display: flex;
   align-items: flex-end;
-  margin: 0 0 3px 6px;
+  margin: 0 5px 3px 6px;
 }
 .content .quote-area {
   display: flex;
@@ -52,4 +52,13 @@ body {
   font-size: 1.9rem;
   text-align: center;
   word-break: break-all;
+}
+.content .author {
+  border: 2px solid orange;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.author span:first-child {
+  margin: -10px 7px 0 0;
 }
