@@ -20,4 +20,8 @@ soundBtn.addEventListener("click", () => {
   );
   speechSynthesis.speak(voice);
 });
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(quoteText.innerText);
+});
 quoteBtn.addEventListener("click", randomQuote);
