@@ -1,6 +1,9 @@
 const quoteText = document.querySelector(".quote");
 const authorName = document.querySelector(".author .name");
 const quoteBtn = document.querySelector("button");
+const soundBtn = document.querySelector(".sound");
+const copyBtn = document.querySelector(".copy");
+const twitterBtn = document.querySelector(".twitter");
 
 function randomQuote() {
   fetch("https://api.quotable.io/random")
@@ -11,4 +14,8 @@ function randomQuote() {
     });
 }
 
+soundBtn.addEventListener("click", () => {
+  const voice = new SpeechSynthesisUtterance(`${quoteText.innerText}`);
+  speechSynthesis.speak(voice);
+});
 quoteBtn.addEventListener("click", randomQuote);
