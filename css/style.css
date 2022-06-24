@@ -21,17 +21,14 @@ body {
   width: 600px;
   border-radius: 20px;
   padding: 30px 30px 25px;
-  /* border: 2px solid red; */
   background: var(--paragraph-clr);
 }
 .wrapper header {
-  /* border: 2px solid green; */
   text-align: center;
   font-size: 2.2rem;
   font-weight: 600;
 }
 .wrapper .content {
-  /* border: 2px solid #ff0; */
   margin: 35px 0;
 }
 .quote-area i {
@@ -55,7 +52,6 @@ body {
   word-break: break-all;
 }
 .content .author {
-  /* border: 2px solid orange; */
   display: flex;
   justify-content: flex-end;
   margin-top: 12px;
