@@ -23,6 +23,8 @@ soundBtn.addEventListener("click", () => {
 });
 
 copyBtn.addEventListener("click", () => {
+  copyBtn.classList.add(".copy");
+
   navigator.clipboard.writeText(quoteText.innerText);
 });
 quoteBtn.addEventListener("click", randomQuote);
